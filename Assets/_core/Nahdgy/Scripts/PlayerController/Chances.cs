@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,9 +7,10 @@ using UnityEngine;
 public class Chances : MonoBehaviour
 {
     public int chances;
-
     [SerializeField]
-    private LayerMask obstacle;
+    private float endFOV;
+    [SerializeField]
+    private int obstacle, winZone;
     [SerializeField]
     private bool isInvisible;
     [SerializeField]
@@ -17,21 +19,44 @@ public class Chances : MonoBehaviour
     private float invicibilityFlashDelay = 0.05f;
     [SerializeField]
     private float invicibilyTimer;
+    [SerializeField]
+    private GameObject collideObject;
+    [SerializeField]
+    private CinemachineVirtualCamera playerCamera;
+
+    [SerializeField]
+    private UIManager Ui;
     public IEnumerator InvicibilityFlash()
     {
         while (isInvisible)
         {
-            coloring.material.color = new Color(1f, 1f, 1f, 0f);
+            coloring.enabled = false;
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            coloring.material.color = new Color(1f, 1f, 1f, 1f);
+            coloring.enabled = true;
+            yield return new WaitForSeconds(invicibilityFlashDelay);
+            coloring.enabled = false;
+            yield return new WaitForSeconds(invicibilityFlashDelay);
+            coloring.enabled = true;
             yield return new WaitForSeconds(invicibilityFlashDelay);
         }
 
     }
     public IEnumerator InvicibilityTimer()
-    {
+    {   
         yield return new WaitForSeconds(invicibilyTimer);
         isInvisible = false;
+    }
+    IEnumerator ChangeFOV(CinemachineVirtualCamera cam, float duration)
+    {
+        float startFOV = cam.m_Lens.FieldOfView;
+        endFOV = startFOV + 20;
+        float time = 0;
+        while (time < duration)
+        {
+            cam.m_Lens.FieldOfView = Mathf.Lerp(startFOV, endFOV, time / duration);
+            yield return null;
+            time += Time.deltaTime;
+        }
     }
 
     public void TakeDamagePlayer(int damage)
@@ -39,10 +64,12 @@ public class Chances : MonoBehaviour
         if (!isInvisible)
         {
             chances -= damage;
+            //UnZoom the camera
+            StartCoroutine(ChangeFOV(playerCamera, 1f));
 
             if (chances <= 0)
             {
-                //Die();
+                Ui.GameOver();
                 return;
             }
             isInvisible = true;
@@ -55,7 +82,18 @@ public class Chances : MonoBehaviour
     {
         if (collision.gameObject.layer == obstacle)
         {
+            Debug.Log("Paw");
+            collideObject = collision.gameObject;
+            Physics.IgnoreCollision(collideObject.GetComponent<Collider>(), GetComponent<Collider>());  
             TakeDamagePlayer(1);
+          
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if((other.gameObject.layer == obstacle))
+        {
+            Ui.Win();
         }
     }
 }
