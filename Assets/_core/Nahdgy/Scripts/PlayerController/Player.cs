@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody playerRb;
 
     [SerializeField]
-    private float speed, jumpForce, moveMultiplier, playerHeight, horizontalInput, deplacementDistance, crouchHeight, crouchDelay;
+    private float speed,maxSpeed, jumpForce, moveMultiplier, playerHeight, horizontalInput, deplacementDistance, crouchHeight, crouchDelay;
     private float delay = 0.3f;
 
     [SerializeField]
@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
     private LayerMask whatIsGround;
 
     [SerializeField]
-    private bool isGrounded, canRun, canMove;
+    private bool isGrounded;
+    public bool canRun, canMove;
 
     [SerializeField]
     private Transform playerOriantation;
@@ -131,6 +132,7 @@ public class Player : MonoBehaviour
     {
         if (canRun)
         {
+            speed = Mathf.Clamp(speed, 0, maxSpeed);
          runDirection = playerOriantation.forward;
             if(isGrounded)
             {
