@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -6,14 +7,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody playerRb;
+    public Rigidbody playerRb;
 
     [SerializeField]
-    private float speed,maxSpeed, jumpForce, moveMultiplier, playerHeight, horizontalInput, deplacementDistance, crouchHeight, crouchDelay;
+    private float maxSpeed, jumpForce, moveMultiplier, playerHeight, horizontalInput, deplacementDistance, crouchHeight, crouchDelay;
     private float delay = 0.3f;
+    public float speed;
 
     [SerializeField]
-    GameObject player;
+    public GameObject player;
+
 
     [SerializeField]
     private CapsuleCollider playerCollider;

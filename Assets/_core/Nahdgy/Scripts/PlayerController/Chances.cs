@@ -7,6 +7,7 @@ using UnityEngine;
 public class Chances : MonoBehaviour
 {
     public int chances;
+
     [SerializeField]
     private float endFOV;
     [SerializeField]
@@ -26,6 +27,11 @@ public class Chances : MonoBehaviour
 
     [SerializeField]
     private UIManager Ui;
+
+    private void Start()
+    {
+        playerCamera = GameObject.FindAnyObjectByType<CinemachineVirtualCamera>();
+    }
     public IEnumerator InvicibilityFlash()
     {
         while (isInvisible)

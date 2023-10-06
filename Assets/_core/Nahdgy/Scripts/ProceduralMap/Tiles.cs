@@ -7,6 +7,8 @@ public class Tiles : MonoBehaviour
     [SerializeField]
     private GameObject[] tilesPrefabs;
     [SerializeField]
+    private GameObject winTrigger;
+    [SerializeField]
     private float zSpawn = 0, tileLenght = 60;
 
     [SerializeField]
@@ -35,15 +37,32 @@ public class Tiles : MonoBehaviour
         for(int i = 0; i < tileCount; i++) 
         {
             if (i == 0)
+            {
                 InstantiateTiles(0);
+            }
+                
             else
+            {
                 InstantiateTiles(Random.Range(0, tilesPrefabs.Length));
+            }
+               
+            if (i == tileCount - 1)
+            {
+                Debug.Log("WinningZoneWasInstantiate");
+                SpawnWinning();
+            }
+                   
         }
     }
     private void InstantiateTiles(int indexTiles)
     {
         Instantiate(tilesPrefabs[indexTiles], transform.forward * zSpawn, transform.rotation);
         zSpawn += tileLenght;
+    }
 
+    private void SpawnWinning()
+    {
+        Instantiate(winTrigger, transform.forward * zSpawn, transform.rotation);
+        zSpawn += tileLenght;
     }
 }
