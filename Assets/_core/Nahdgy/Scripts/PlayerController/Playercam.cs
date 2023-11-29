@@ -11,6 +11,7 @@ public class Playercam : MonoBehaviour
     private Player player;
     private void Start()
     {
+        Debug.Log("CameraIsSet");
         player = GameObject.FindAnyObjectByType<Player>();
         playerCam.Follow = player.transform;
     }

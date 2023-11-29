@@ -17,9 +17,6 @@ public class Spawner : MonoBehaviour
     private void OnEnable()
     {
         character = GameObject.FindAnyObjectByType<Skinchoose>();
-    }
-    public void Start()
-    {
         player = character.playerChosen;
         SpawnStartPlayer();
     }
