@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class Player : MonoBehaviour
 {
@@ -45,14 +44,8 @@ public class Player : MonoBehaviour
     public void FixedUpdate()
     {
         Run();
-        ChangeCoridore();
-    }
-
-    public void Update()
-    {
-        Jump();
         GroundCheck();
-        Crouch();
+        
     }
 
     private IEnumerator DeplacementDelay()
@@ -76,12 +69,11 @@ public class Player : MonoBehaviour
 
         deplacementDistance = 3;
     }
-    private void ChangeCoridore()
+    public  void ChangeCoridore(InputAction.CallbackContext move)
     {
         
-        horizontalInput = Input.GetAxisRaw("Horizontal");
         player.transform.position = new Vector3(Mathf.Clamp(transform.position.x, -3.0f, 3.0f), transform.position.y, transform.position.z);
-        if(horizontalInput == 1 && canMove)
+        if(move.ReadValue<float>() == 1 && canMove)
         {
             Debug.Log("movingRigtht");
             //StartCoroutine(LerpMoving());
@@ -90,7 +82,7 @@ public class Player : MonoBehaviour
             playerPosition.x = Mathf.Clamp(playerPosition.x, -3.0f, 3.0f);
             player.transform.position = playerPosition;
         }
-        if(horizontalInput == -1 && canMove) 
+        if(move.ReadValue<float>() == -1 && canMove) 
         {
             Debug.Log("movingLeft");
             //StartCoroutine(LerpMoving());
@@ -106,9 +98,9 @@ public class Player : MonoBehaviour
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * .5f + .2f, whatIsGround);
     }
 
-    private void Jump()
+    public void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded && canRun)
+        if ( isGrounded && canRun)
         {
             playerRb.velocity = new Vector3(playerRb.velocity.x, 0f, playerRb.velocity.z);
             playerRb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
@@ -121,9 +113,9 @@ public class Player : MonoBehaviour
         playerCollider.height = playerHeight;
     }
     
-    private void Crouch()
+    public void Crouch()
     {
-        if(Input.GetButtonDown("Crouch") && isGrounded && canRun)
+        if(isGrounded && canRun)
         {
             playerCollider.height = crouchHeight;
             StartCoroutine(CrouchDelay());
