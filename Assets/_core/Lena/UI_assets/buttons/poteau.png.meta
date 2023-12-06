@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c0109343f973af43bae28712f32bf97
+guid: 407369d1fe76a914498fdc6088eaaa0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bouton_start_0
+      name: poteau_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 344
-        width: 995
-        height: 334
+        x: 466
+        y: 15
+        width: 160
+        height: 1006
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41a54862fa8324447805445ed91370d0
-      internalID: -164795627
+      spriteID: f10898f03db308548b535f9a97887c85
+      internalID: 659745633
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bouton_start_0: -164795627
+      poteau_0: 659745633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
