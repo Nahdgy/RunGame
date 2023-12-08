@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5281144306797034290
+--- !u!1 &2622809646406525804
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7713957240449182590}
-  - component: {fileID: 8318305528912827577}
-  - component: {fileID: 7516540865248068920}
+  - component: {fileID: 6067808836619913306}
+  - component: {fileID: 7745572411205832465}
+  - component: {fileID: 777667934874315718}
   m_Layer: 0
-  m_Name: tron arbre(Clone)
+  m_Name: TREEBRANCH FINAL(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7713957240449182590
+--- !u!4 &6067808836619913306
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5281144306797034290}
+  m_GameObject: {fileID: 2622809646406525804}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03627594, y: 0, z: -0.04923163}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.000000057601163, y: -0.000000057601163, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.21170464, y: 0.23163533, z: 0}
+  m_LocalScale: {x: 1.4972496, y: 0.6678916, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5233653301973546214}
+  m_Father: {fileID: 2398801673520803703}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8318305528912827577
+--- !u!33 &7745572411205832465
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5281144306797034290}
-  m_Mesh: {fileID: -951608786083511892, guid: dbd54d133e2bec54e9cb5975fe91f049, type: 3}
---- !u!23 &7516540865248068920
+  m_GameObject: {fileID: 2622809646406525804}
+  m_Mesh: {fileID: 7450741763379908841, guid: 926181360874033498c38625fb174cc8, type: 3}
+--- !u!23 &777667934874315718
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5281144306797034290}
+  m_GameObject: {fileID: 2622809646406525804}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,10 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 335b18f7af211da4285aabcf841bec11, type: 2}
-  - {fileID: 2100000, guid: b86abf31abbf431439d8cff24d737e27, type: 2}
-  - {fileID: 2100000, guid: c48c645f3c4e7e0488ab80fd6b2b3fcf, type: 2}
-  - {fileID: 2100000, guid: bebba088b3993ea44ad9ef2e1668667e, type: 2}
+  - {fileID: 2100000, guid: f89832ee8fd860e40b4b519c4a0b6129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5633544368485256578
+--- !u!1 &7921193257213809160
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,27 +91,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5233653301973546214}
+  - component: {fileID: 2398801673520803703}
   m_Layer: 0
-  m_Name: tronc arbre
+  m_Name: obstacle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5233653301973546214
+--- !u!4 &2398801673520803703
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5633544368485256578}
+  m_GameObject: {fileID: 7921193257213809160}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 3.357534, y: 0, z: 8.525366}
-  m_LocalScale: {x: 27.015152, y: 27.015152, z: 27.015152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7553656, y: 0, z: -29.38}
+  m_LocalScale: {x: 15.470677, y: 3.7856643, z: 13.296231}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7713957240449182590}
+  - {fileID: 6067808836619913306}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
