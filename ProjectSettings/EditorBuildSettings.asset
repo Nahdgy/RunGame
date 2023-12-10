@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/_core/Nahdgy/Scenes/CharacterChoose.unity
     guid: e5a1c5e0e0c9c7045b26205dc792ca3c
   - enabled: 1
-    path: Assets/_core/Nahdgy/Scenes/MainMenu.unity
+    path: Assets/_core/Nahdgy/Scenes/MenuMain.unity
     guid: 8e4dd0ff5a9cad4479b5612084b16462
   - enabled: 1
     path: Assets/_core/Nahdgy/Scenes/Credit.unity
