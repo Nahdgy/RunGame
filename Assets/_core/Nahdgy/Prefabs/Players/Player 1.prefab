@@ -2755,11 +2755,8 @@ MonoBehaviour:
   animaGameOver: 
   menuScene: MainMenu
   levelOneScene: Level1
-  levelTwoScene: Level2
-  levelTreeScene: Level3
   creditsScene: 
   player: {fileID: 216634122676353832}
-  choose: {fileID: 0}
 --- !u!1 &8806006291438636145
 GameObject:
   m_ObjectHideFlags: 0
