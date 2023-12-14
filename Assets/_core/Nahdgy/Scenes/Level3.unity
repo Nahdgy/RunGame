@@ -628,7 +628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  character: {fileID: 0}
   playerSpawn: {fileID: 636574477}
 --- !u!4 &636574477
 Transform:
@@ -1017,6 +1016,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilesPrefabs:
+  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
+  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
+  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
+  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
   - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
   - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
   - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
