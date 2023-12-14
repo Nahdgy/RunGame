@@ -10,14 +10,10 @@ public class Spawner : MonoBehaviour
     public GameObject player;
 
     [SerializeField]
-    private Skinchoose character;
-    [SerializeField]
     private Transform playerSpawn;
 
-    private void OnEnable()
+    private void Start()
     {
-        character = GameObject.FindAnyObjectByType<Skinchoose>();
-        player = character.playerChosen;
         SpawnStartPlayer();
     }
     private void SpawnStartPlayer()

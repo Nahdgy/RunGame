@@ -21,10 +21,6 @@ public class Tiles : MonoBehaviour
         SpawnRandom();    
     }
 
-    void Update()
-    {
-        
-    }
     private void SpawnInfinite()
     {
         if(playerTransform.position.z>zSpawn - (tileCount * tileLenght))

@@ -29,17 +29,16 @@ public class UIManager : MonoBehaviour
     
 
     [SerializeField]
-    private string menuScene, levelOneScene, levelTwoScene, levelTreeScene, creditsScene;
+    private string menuScene, levelOneScene, creditsScene;
 
     [SerializeField]
     private Player player;
-    [SerializeField]
-    private Skinchoose choose;
+ 
     private void Start()
     {
         if (player != null) {countDownUi = GameObject.FindGameObjectWithTag("CountDown");}
         
-        player = GameObject.FindAnyObjectByType<Player>();
+        //player = GameObject.FindAnyObjectByType<Player>();
         
         StartCoroutine(AnimationStart());       
     }
@@ -91,24 +90,14 @@ public class UIManager : MonoBehaviour
         player.speed = 1;
         animatorWin.Play(animaWin);
     }
-    public void Level1()
+    public void Play()
     {
         SceneManager.LoadScene(levelOneScene);
-        player.speed = 10;
-    }
-    public void Level2() 
-    {
-        SceneManager.LoadScene(levelTwoScene);
-        player.speed = 20;
-    }
-    public void Level3() 
-    {
-        SceneManager.LoadScene(levelTreeScene);
-        player.speed = 30;
     }
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        player.speed += 10;
     }
     public void Credit()
     {
