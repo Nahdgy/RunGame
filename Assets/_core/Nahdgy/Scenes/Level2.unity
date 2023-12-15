@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: c3ef286c9917bbb4080a363ce3874825, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 01e88168fe66cb34cb8f409dc7f0659e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.66701937, g: 0.66618663, b: 0.7810617, a: 1}
+  m_IndirectSpecularColor: {r: 0.6961417, g: 0.6134224, b: 0.6766491, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -335,13 +335,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilesPrefabs:
   - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
-  - {fileID: 109440520091617979, guid: d4aac80d847aeb8469a6aee559ca6e29, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
+  - {fileID: 5752921518369530531, guid: db7b92f06744fa5459ba98f85b6b5c75, type: 3}
   winTrigger: {fileID: 8551632267130935658, guid: 3d85bb422f9ce33408686aa20309ca61,
     type: 3}
   zSpawn: 0
@@ -565,7 +565,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.38
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -608,7 +608,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 2192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -623,13 +623,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.13731688, y: -0.25574797, z: 0.033225276, w: 0.9563646}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.239, y: -30, z: -0.399}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6373a0d28f3d1c244aa928bd93a9e5a7, type: 2}
   m_sharedMaterial: {fileID: -1448110345130346276, guid: 6373a0d28f3d1c244aa928bd93a9e5a7,
