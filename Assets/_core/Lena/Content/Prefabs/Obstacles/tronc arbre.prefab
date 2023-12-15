@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7713957240449182590}
   - component: {fileID: 8318305528912827577}
   - component: {fileID: 7516540865248068920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tron arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5233653301973546214}
   - component: {fileID: 2484757850855865805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tronc arbre
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6067808836619913306}
   - component: {fileID: 7745572411205832465}
   - component: {fileID: 777667934874315718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TREEBRANCH FINAL(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2398801673520803703}
   - component: {fileID: 5998901495320882535}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obstacle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,4 +137,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.61, y: 0.58, z: 0.15}
-  m_Center: {x: 0.21, y: 0.27, z: 0}
+  m_Center: {x: 0.21, y: 0.06, z: 0}

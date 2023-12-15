@@ -2,34 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scoring : MonoBehaviour
 {
     [SerializeField]
-    private GameObject scoreUIObject;
-    [SerializeField]
-    private Text scoreText;
+    private TMP_Text textScore;
     [SerializeField]
     private int scoreDisplay = 0;
-    private int layerPlayer = 7;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        scoreText.text = scoreDisplay.ToString();
+        textScore.text = scoreDisplay.ToString();
     }
-    private void Start()
+    public void AddScore(int points)
     {
-        scoreUIObject = GameObject.FindGameObjectWithTag("Score");
-        scoreText = scoreUIObject.GetComponent<Text>();
+        scoreDisplay += points;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.layer == layerPlayer)
-        {
-            scoreDisplay += 140;
-
-        }
-    }
-
-  
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6802183017203963021}
   - component: {fileID: 1891446916513840732}
   - component: {fileID: 7922418992483426390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TREEBRANCH FINAL(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 435759709444336831}
   - component: {fileID: 865343739077285923}
   - component: {fileID: 5767518120409891615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: treebranch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,5 +158,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.39, y: 0.27, z: 0.09}
-  m_Center: {x: 0.32, y: 0.49, z: 0}
+  m_Size: {x: 0.45, y: 0.36, z: 0.09}
+  m_Center: {x: 0.36, y: 0.4, z: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1287343365279293386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tronc arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 9110913156875041855}
   - component: {fileID: 347882249145614862}
   - component: {fileID: 452985359492947706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TREEBRANCH FINAL(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 6337903380067702834}
   - component: {fileID: 2793530567822485509}
   - component: {fileID: 4793311167495613516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obstacle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.13, y: 0.05, z: 0.22}
+  m_Size: {x: 0.19, y: 0.05, z: 0.22}
   m_Center: {x: 0.15, y: 0, z: 0}
 --- !u!65 &4793311167495613516
 BoxCollider:
@@ -224,7 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5542153267288697979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: treebranch(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 4824572993682016200}
   - component: {fileID: 8403249906815966503}
   - component: {fileID: 8507630292350666721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tron arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

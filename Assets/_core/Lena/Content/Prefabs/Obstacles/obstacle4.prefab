@@ -61,7 +61,7 @@ PrefabInstance:
     - target: {fileID: 7921193257213809160, guid: 702d5c8a65a46e248859b2202c1733c4,
         type: 3}
       propertyPath: m_Name
-      value: treebranch(Clone) (1) Variant
+      value: obstacle4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
