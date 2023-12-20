@@ -1489,7 +1489,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1715994204}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Level1
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2213,11 +2213,8 @@ MonoBehaviour:
   animaGameOver: 
   menuScene: Menu
   levelOneScene: Level1
-  levelTwoScene: Level2
-  levelTreeScene: Level3
   creditsScene: Credit
   player: {fileID: 0}
-  choose: {fileID: 0}
 --- !u!4 &1715994205
 Transform:
   m_ObjectHideFlags: 0

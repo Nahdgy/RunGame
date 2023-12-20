@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/_core/Lena/Content/Materials map.meta
+guid: 9f26f932e40bf7142afc116ccfd016fd
+========
 guid: a5b782185ff9c2743ac17787c56dea36
+>>>>>>>> Stashed changes:Assets/_core/Lena/Content/Prefabs/Tiles/Map.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

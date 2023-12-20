@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5694249047966220193}
   - component: {fileID: 9100204974462326886}
   - component: {fileID: 5390572481442711772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obstacle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,8 +97,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.13, y: 0.05, z: 0.22}
-  m_Center: {x: 0.15, y: 0, z: 0}
+  m_Size: {x: 0.16, y: 0.05, z: 0.22}
+  m_Center: {x: 0.13, y: 0, z: 0}
 --- !u!1 &2089818675481588547
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 8231384036026378706}
   - component: {fileID: 6633176540898783874}
   - component: {fileID: 5813970812522974872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tron arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8668298032818511785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tronc arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 4730261493321582022}
   - component: {fileID: 8596590206249888004}
   - component: {fileID: 1797129523221545834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TREEBRANCH FINAL(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,6 +279,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f89832ee8fd860e40b4b519c4a0b6129, type: 2}
+  - {fileID: 2100000, guid: a0959c6fa24a7ee439ea3af0eabc3495, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -309,7 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6702905367043640028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: treebranch(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

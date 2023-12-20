@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7713957240449182590}
   - component: {fileID: 8318305528912827577}
   - component: {fileID: 7516540865248068920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tron arbre(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,6 +65,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: b86abf31abbf431439d8cff24d737e27, type: 2}
   - {fileID: 2100000, guid: c48c645f3c4e7e0488ab80fd6b2b3fcf, type: 2}
   - {fileID: 2100000, guid: bebba088b3993ea44ad9ef2e1668667e, type: 2}
+  - {fileID: 2100000, guid: bebba088b3993ea44ad9ef2e1668667e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5233653301973546214}
   - component: {fileID: 2484757850855865805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tronc arbre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
