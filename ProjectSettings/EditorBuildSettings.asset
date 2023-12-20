@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_core/Nahdgy/Scenes/MenuMain.unity
+    path: Assets/_core/Nahdgy/Scenes/MainMenu.unity
     guid: 8e4dd0ff5a9cad4479b5612084b16462
   - enabled: 1
     path: Assets/_core/Nahdgy/Scenes/Level1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/_core/Nahdgy/Scenes/Level2.unity
-    guid: 9c9d4c0c5891c4a4584e4dd712e373b4
+    guid: c47b0b52f9e19b9469ca8444718dce3b
   - enabled: 1
     path: Assets/_core/Nahdgy/Scenes/Level3.unity
-    guid: 6af70f2d56f30994da659402583e9cf1
+    guid: 7c166e39ed6f26045bbf27217f276e6f
   m_configObjects: {}
