@@ -20,6 +20,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private CapsuleCollider playerCollider;
 
+    public Animator animator;
+
+    [SerializeField]
+    private float groundRange;
+
     [SerializeField]
     private LayerMask whatIsGround;
 
@@ -45,7 +50,6 @@ public class Player : MonoBehaviour
     {
         Run();
         GroundCheck();
-        
     }
 
     private IEnumerator DeplacementDelay()
@@ -95,13 +99,20 @@ public class Player : MonoBehaviour
     }
     private void GroundCheck()
     {
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * .5f + .2f, whatIsGround);
+        //get the radius of the players capsule collider, and make it a tiny bit smaller than that
+        float radius = playerCollider.radius * 0.9f;
+        //get the position (assuming its right at the bottom) and move it up by almost the whole radius
+        Vector3 pos = transform.position + Vector3.up * (radius * 0.9f);
+        //returns true if the sphere touches something on that layer
+        isGrounded = Physics.CheckSphere(pos, radius, whatIsGround);
     }
 
     public void Jump()
     {
+        Debug.Log("Jump");
         if ( isGrounded && canRun)
         {
+            animator.SetTrigger("Saut");
             playerRb.velocity = new Vector3(playerRb.velocity.x, 0f, playerRb.velocity.z);
             playerRb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
         }
@@ -115,10 +126,11 @@ public class Player : MonoBehaviour
     
     public void Crouch()
     {
-        if(isGrounded && canRun)
+        if (isGrounded && canRun)
         {
             playerCollider.height = crouchHeight;
             StartCoroutine(CrouchDelay());
+            animator.SetTrigger("Glisse");
         }        
     }
 

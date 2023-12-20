@@ -15,20 +15,18 @@ public class Chances : MonoBehaviour
     [SerializeField]
     private bool isInvisible;
     [SerializeField]
-    private MeshRenderer coloring;
+    private GameObject coloring;
     [SerializeField]
     private float invicibilityFlashDelay = 0.05f;
     [SerializeField]
     private float invicibilyTimer;
-    [SerializeField]
     private GameObject collideObject;
-    [SerializeField]
     private CinemachineVirtualCamera playerCamera;
 
     [SerializeField]
     private UIManager Ui;
 
-    private void Start()
+    private void Awake()
     {
         playerCamera = GameObject.FindAnyObjectByType<CinemachineVirtualCamera>();
     }
@@ -36,13 +34,13 @@ public class Chances : MonoBehaviour
     {
         while (isInvisible)
         {
-            coloring.enabled = false;
+            coloring.SetActive(false);
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            coloring.enabled = true;
+            coloring.SetActive(true);
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            coloring.enabled = false;
+            coloring.SetActive(false);
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            coloring.enabled = true;
+            coloring.SetActive(true);
             yield return new WaitForSeconds(invicibilityFlashDelay);
         }
 

@@ -69,12 +69,14 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverUI.SetActive(false);
         winUI.SetActive(false);
+        player.animator.SetBool("Mort", false);
     }
     public void GameOver()
     {
         player.playerRb.isKinematic = true;
         gameOverUI.SetActive(true);
-        animatorGameOver.Play(animaGameOver);    
+        player.animator.SetBool("Mort", true);
+        animatorGameOver.Play(animaGameOver);
     }
     
     public void Quit()

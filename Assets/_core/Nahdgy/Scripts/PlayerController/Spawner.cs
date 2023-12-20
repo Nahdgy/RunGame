@@ -7,7 +7,10 @@ public class Spawner : MonoBehaviour
 {
 
     [SerializeField]
-    public GameObject player;
+    private GameObject player;
+
+    private GameObject _instantiatedPlayer;
+
 
     [SerializeField]
     private Transform playerSpawn;
@@ -18,6 +21,7 @@ public class Spawner : MonoBehaviour
     }
     private void SpawnStartPlayer()
     {
-        Instantiate(player, playerSpawn);
+        _instantiatedPlayer = Instantiate(player, playerSpawn);
+        _instantiatedPlayer.transform.SetParent(null);
     }
 }
