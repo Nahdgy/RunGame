@@ -5,6 +5,14 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField]
+    private AudioSource _SoundJump;
+    
+    [SerializeField]
+    private AudioSource _SoundGlissade;
+
+    [Header("Player Settings")]
     [SerializeField]
     public Rigidbody playerRb;
 
@@ -112,6 +120,8 @@ public class Player : MonoBehaviour
         Debug.Log("Jump");
         if ( isGrounded && canRun)
         {
+            _SoundGlissade.Stop();
+            _SoundJump.Play();
             animator.SetTrigger("Saut");
             playerRb.velocity = new Vector3(playerRb.velocity.x, 0f, playerRb.velocity.z);
             playerRb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
@@ -128,6 +138,8 @@ public class Player : MonoBehaviour
     {
         if (isGrounded && canRun)
         {
+            _SoundJump.Stop();
+            _SoundGlissade.Play();
             playerCollider.height = crouchHeight;
             StartCoroutine(CrouchDelay());
             animator.SetTrigger("Glisse");

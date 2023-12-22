@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class Chances : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField]
+    private AudioSource _SoundDamage;
+
+
+    [Header("Chances Settings")]
     public int chances;
 
     [SerializeField]
@@ -86,11 +92,11 @@ public class Chances : MonoBehaviour
     {
         if (collision.gameObject.layer == obstacle)
         {
+            _SoundDamage.Play();
             Debug.Log("Paw");
             collideObject = collision.gameObject;
             Physics.IgnoreCollision(collideObject.GetComponent<Collider>(), GetComponent<Collider>());  
             TakeDamagePlayer(1);
-          
         }
     }
     private void OnTriggerEnter(Collider other)
